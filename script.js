@@ -41,7 +41,7 @@ function askTheja() {
     response.textContent = `Theja says: "${answer}"`;
 }
 
-// Initialize Sketchfab viewer
+// Initialize Sketchfab viewer for Theja
 function initSketchfab() {
     const iframe = document.createElement('iframe');
     iframe.width = '100%';
@@ -55,10 +55,10 @@ function makeChoice(choice) {
     const video = document.getElementById('lesson-video');
     if (choice === 'high') {
         alert('The catapult launches high! Gravity pulls it down slower.');
-        video.currentTime = 10;
+        video.currentTime = 10; // Simulate high launch outcome
     } else if (choice === 'low') {
         alert('The catapult launches low! Gravity acts faster.');
-        video.currentTime = 5;
+        video.currentTime = 5; // Simulate low launch outcome
     }
 }
 
@@ -79,6 +79,5 @@ function askTheja() {
     response.textContent = `Theja says: "${answer}"`;
 }
 
-// Call on page load
+// Load Sketchfab on page start
 window.onload = initSketchfab;
-
